@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pyramid Clash - دعم اللعبة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <div class="container">
+
+    <h1 class="title">🎮 دعمنا لنبدأ Pyramid Clash</h1>
+    <p class="subtitle">
+      عندنا فكرة لعبة قوية، لكنها لسه في مرحلة البداية.  
+      دعمك هيساعدنا نبدأ أول خطوة في تطوير اللعبة  
+      (برمجة – جرافيك – صوتيات).
+    </p>
+
+    <!-- Progress Bar -->
+    <h2>تقدم الدعم</h2>
+    <div class="progress-box">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <p id="progressText">0 من 500,000 جنيه</p>
+
+    <!-- طرق الدعم -->
+    <h2>طرق الدعم</h2>
+    <div class="support-methods">
+      <a href="#" class="btn" id="vodafoneBtn">📱 Vodafone Cash</a>
+    </div>
+
+    <!-- Vodafone Cash Form -->
+    <div id="vodafoneForm" class="vodafone-form hidden">
+      <h3>اختر الرقم الذي ستدفع عليه:</h3>
+      <select id="vodafoneNumber">
+        <option value="" disabled selected>اختر رقم</option>
+        <option value="01050586444">01050586444</option>
+      </select>
+
+      <h3>أدخل المبلغ بالجنيه المصري:</h3>
+      <input type="number" id="vodafoneAmount" placeholder="مثلاً 1500" min="1">
+
+      <h3>ارفق صورة الإيصال:</h3>
+      <input type="file" id="receipt" accept="image/*">
+
+      <h3>أدخل رقم هاتفك:</h3>
+      <input type="text" id="userPhone" placeholder="مثلاً 01012345678">
+
+      <button id="submitVodafone" class="btn">تأكيد الدفع</button>
+    </div>
+
+    <!-- Game Guide PDF -->
+    <div class="game-guide">
+      <h2>📄 دليل اللعبة</h2>
+      <a href="pyramid-guide.pdf" download class="btn">تحميل الدليل</a>
+    </div>
+
+    <!-- رسالة شكر -->
+    <p class="thank-you">
+      شكرًا لكل من دعمنا ❤️ دعمك بيفرق معانا جدًا!
+    </p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
